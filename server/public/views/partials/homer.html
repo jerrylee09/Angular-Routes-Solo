@@ -1,0 +1,9 @@
+<div ng-app="myApp" ng-controller="homerController"  >
+	<img src="../images/{{image}}" alt="{{name}}" ng-hide="hideSimpson">
+
+<p>
+  {{name}} {{detail}}
+</p>
+<button ng-click="hideSimpson = !hideSimpson" class="btn btn-warning">Hide {{name}}</button>
+</div>
+
