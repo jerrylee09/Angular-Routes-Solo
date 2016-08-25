@@ -1,16 +1,12 @@
-.btn-warning {
-    color: #fff;
-    background-color: #f0ad4e;
-    border-color: #eea236;
- }
-.btn {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
+img {
+    height: 30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fit {
+	height: 30em;
+}
+footer {
+	margin-top: 1em;
 }

@@ -1,0 +1,10 @@
+
+<div ng-app="myApp" ng-controller="batmanController"  >
+<div class="fit">
+	<img src="../images/{{image}}" alt="{{name}}"  ng-hide="hideCharacter">
+</div>
+<h3 class="text-center">
+  {{name}} {{detail}}
+</h3>
+<button ng-click="hideCharacter = !hideCharacter" class="btn btn-warning center-block">Hide {{name}}</button>
+</div>

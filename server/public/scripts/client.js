@@ -4,64 +4,51 @@ var myApp = angular.module("myApp", ["ngRoute"]);
 
 myApp.config(["$routeProvider", function($routeProvider){
   $routeProvider.
-      when("/homer", {
-        templateUrl: "/views/partials/homer.html",
-        controller: "homerController"
+      when("/batman", {
+        templateUrl: "/views/partials/batman.html",
+        controller: "batmanController"
       }).
-      // when("/marge", {
-      //   templateUrl: "/views/partials/marge.html",
-      //   controller: "margeController"
-      // }).
-      when("/bart", {
-        templateUrl: "/views/partials/bart.html",
-        controller: "bartController"
+      when("/flash", {
+        templateUrl: "/views/partials/flash.html",
+        controller: "flashController"
       }).
-      when("/lisa", {
-        templateUrl: "/views/partials/lisa.html",
-        controller: "lisaController"
+      when("/deadpool", {
+        templateUrl: "/views/partials/deadpool.html",
+        controller: "deadpoolController"
       }).
-      when("/maggie", {
-        templateUrl: "/views/partials/maggie.html",
-        controller: "maggieController"
+      when("/taskmaster", {
+        templateUrl: "/views/partials/taskmaster.html",
+        controller: "taskmasterController"
       }).
       otherwise({
-        redirectTo: "/homer"
+        redirectTo: "/batman"
       });
 }]);
 
-myApp.controller("homerController", ["$scope", function($scope){
-    $scope.name = "Homer",
-    $scope.detail = "Love Duff beer",
-    $scope.image = "homer_simpson.png"
-    $scope.hideSimpson = false;
+myApp.controller("batmanController", ["$scope", function($scope){
+    $scope.name = "Batman",
+    $scope.detail = "is a vigilante in DC comic.",
+    $scope.image = "batman.png"
+    $scope.hideCharacter = false;
 }]);
 
-// myApp.controller("margeController", ["$scope", function($scope){
-//   $scope.firstName = "marge",
-//   $scope.lastName = "simpson"
-//   $scope.myVar = false;
-//   $scope.toggle = function() {
-//   $scope.myVar = !$scope.myVar;
-//   };
-// }]);
-
-myApp.controller("bartController", ["$scope", function($scope){
-  $scope.name = "Bart",
-  $scope.detail = "Love prank call Moe",
-  $scope.image = "bart_simpson.png"
-  $scope.hideSimpson = false;
+myApp.controller("flashController", ["$scope", function($scope){
+  $scope.name = "Flash",
+  $scope.detail = "is a hero in DC comic.",
+  $scope.image = "flash.png"
+  $scope.hideCharacter = false;
 }]);
 
-myApp.controller("lisaController", ["$scope", function($scope){
-  $scope.name = "Lisa",
-  $scope.detail = "Love Music",
-  $scope.image = "lisa_simpson.png"
-  $scope.hideSimpson = false;
+myApp.controller("deadpoolController", ["$scope", function($scope){
+  $scope.name = "Deadpool",
+  $scope.detail = "is a anti-hero in Marvel comic.",
+  $scope.image = "deadpool.png"
+  $scope.hideCharacter = false;
 }]);
 
-myApp.controller("maggieController", ["$scope", function($scope){
-$scope.name = "Maggie",
-  $scope.detail = "Love her pacifier",
-  $scope.image = "maggie_simpson.png"
-  $scope.hideSimpson = false;
+myApp.controller("taskmasterController", ["$scope", function($scope){
+$scope.name = "Taskmaster",
+  $scope.detail = "is a villian in Marvel comic.",
+  $scope.image = "taskmaster.png"
+  $scope.hideCharacter = false;
 }]);
